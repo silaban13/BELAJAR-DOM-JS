@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+     line-height: 0; /*untuk menyesuaikan gambar ke div supaya di 
+     sesuiakan dengan ukuran gambar*/
+}
+
+body {
+    background-color: rgb(29, 122, 122);
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+     margin: 10px auto;  /*untuk memberi jarak dari atas ke bawah*/
+    border: 5px solid white;  /*untuk membuat garis di atas*/
+    float: left;
+    margin-left: 320px;
+}
+
+.Gkecil {
+    width: 200px;
+    height: 100px;
+    float: left;  
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.Gkecil:hover {
+     opacity: 0.5; /* memberi reaksi saja ketika di
+     hover bukan mengganti warna ketika di hover*/
+      cursor: pointer; /* untuk memberitahu bahwa ketika kita
+      hover sebuah element, bahwa element tersebut bisa di klik*/
+}
+
+/* fade ini kaya variabel harus sama dengan yang di .fode 
+ini memberi animasi pada project */
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fode {
+   opacity: 0;
+    animation: fade 0.5s forwards;   /*ini harus sesuai dengan yang di atas  */
+}
+
+.active {
+    opacity: 0.5;
+}
